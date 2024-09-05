@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	
+)
 
 
 
@@ -25,4 +28,14 @@ func main() {
 	//append MEthod 
 	prices = append(prices,3.4)
 	fmt.Print(prices)
+
+	//... operator to append large array 
+	testArray := [] int {1,2,3,4,5,6}
+	fmt.Print(testArray)
+
+	testArrayTwo := [] int {7,8,9,10}
+	fmt.Print(testArrayTwo)
+
+	testArray = append(testArray, testArrayTwo...)
+	fmt.Print(testArray)
 }
